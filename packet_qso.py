@@ -14,6 +14,7 @@ cmd = ""
 while cmd != 'q':
 	cmd = input("(c)q, send (m)essage, set (d)estination call, send (l)ocation, set digi(p)eater chain, (r)st, (7)3, (q)uit \n")[0]
 	if cmd == 'c':
+		dest_call = "QST"
 		os.system('beacon -s -d "' + dest_call + ' ' + digipeaters + '" ' + port + ' "CQ de ' + callsign + '"')
 	if cmd == 'm':
 		os.system('beacon -s -d "' + dest_call + ' ' + digipeaters + '" ' + port + ' "' + input() + '"')

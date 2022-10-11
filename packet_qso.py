@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os
 
 port = input("AX.25 port name: ")
